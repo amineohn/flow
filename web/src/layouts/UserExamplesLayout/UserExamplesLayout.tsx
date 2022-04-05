@@ -10,17 +10,10 @@ const UserExamplesLayout = ({ children }: UserExampleLayoutProps) => {
     <div className="rw-scaffold">
       <Toaster toastOptions={{ className: 'rw-toast', duration: 6000 }} />
       <header className="rw-header">
-        <h1 className="rw-heading rw-heading-primary">
-          <Link
-            to={routes.userExamples()}
-            className="rw-link"
-          >
-            UserExamples
-          </Link>
-        </h1>
+
         <Link
           to={routes.newUserExample()}
-          className="rw-button rw-button-green"
+          className="rw-button rw-button-indigo"
         >
           <div className="rw-button-icon">+</div> New UserExample
         </Link>

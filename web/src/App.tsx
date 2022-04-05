@@ -6,11 +6,13 @@ import Routes from 'src/Routes'
 
 import './scaffold.css'
 import './index.css'
+import Navigation from './components/Navigation'
 
 const App = () => (
   <FatalErrorBoundary page={FatalErrorPage}>
     <RedwoodProvider titleTemplate="%PageTitle | %AppTitle">
       <RedwoodApolloProvider>
+        <Navigation />
         <Routes />
       </RedwoodApolloProvider>
     </RedwoodProvider>

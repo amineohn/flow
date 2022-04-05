@@ -68,6 +68,14 @@ const UserExamplesList = ({ userExamples }) => {
     awaitRefetchQueries: true,
   })
 
+  const Alert = ({ message, type, onClick }): any => (
+    <div className={`alert alert-${type}`} role="alert">
+      {message}
+      <button type="button" className="close" onClick={onClick}>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  )
   const onDeleteClick = (id: number) => {
       swal({
         title: "Are you sure?",

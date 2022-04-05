@@ -46,6 +46,7 @@ const checkboxInputTag = (checked) => {
   return <input type="checkbox" checked={checked} disabled />
 }
 
+
 const UserExample = ({ userExample }) => {
   const [deleteUserExample] = useMutation(DELETE_USER_EXAMPLE_MUTATION, {
     onCompleted: () => {

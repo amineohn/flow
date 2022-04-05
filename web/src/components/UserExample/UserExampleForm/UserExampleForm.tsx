@@ -12,13 +12,13 @@ import {
 const UserExampleForm = (props) => {
   const onSubmit = (data) => {
 
-  
-    
-    
-  
-    
-    
-  
+
+
+
+
+
+
+
     props.onSave(data, props?.userExample?.id)
   }
 
@@ -31,15 +31,15 @@ const UserExampleForm = (props) => {
           titleClassName="rw-form-error-title"
           listClassName="rw-form-error-list"
         />
-      
+
         <Label
           name="email"
           className="rw-label"
-          errorClassName="rw-label rw-label-error"
+          errorClassName="rw-label"
         >
           Email
         </Label>
-        
+
           <TextField
             name="email"
             defaultValue={props.userExample?.email}
@@ -47,25 +47,25 @@ const UserExampleForm = (props) => {
             errorClassName="rw-input rw-input-error"
             validation={{ required: true }}
           />
-        
+
 
         <FieldError name="email" className="rw-field-error" />
 
         <Label
           name="name"
           className="rw-label"
-          errorClassName="rw-label rw-label-error"
+          errorClassName="rw-label"
         >
           Name
         </Label>
-        
+
           <TextField
             name="name"
             defaultValue={props.userExample?.name}
             className="rw-input"
             errorClassName="rw-input rw-input-error"
           />
-        
+
 
         <FieldError name="name" className="rw-field-error" />
 

@@ -3,5 +3,21 @@
 @tailwind utilities;
 
 #redwood-app {
-  @apply bg-gray-50 w-full h-screen flex items-center justify-center select-none;
+  @apply bg-white select-none;
+}
+
+::-webkit-scrollbar {
+  @apply bg-neutral-400/20 px-2 h-1;
+}
+::-webkit-scrollbar-button {
+  @apply hidden;
+}
+::-webkit-scrollbar-track {
+  @apply hidden;
+}
+::-webkit-scrollbar-track-piece {
+  @apply hidden;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-indigo-600;
 }

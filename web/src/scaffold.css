@@ -1,5 +1,5 @@
 .rw-scaffold {
-  @apply bg-white text-gray-600;
+  @apply max-w-7xl m-auto text-gray-600;
 }
 .rw-scaffold h1,
 .rw-scaffold h2 {
@@ -21,7 +21,7 @@
   @apply text-gray-500;
 }
 .rw-header {
-  @apply flex justify-between py-4 px-8;
+  @apply flex justify-end items-center py-4 px-8;
 }
 .rw-main {
   @apply mx-4 pb-4;
@@ -30,10 +30,10 @@
   @apply rounded-lg overflow-hidden w-full;
 }
 .rw-segment-header {
-  @apply bg-gray-200 text-gray-700 py-3 px-4;
+  @apply bg-gray-100 text-gray-700 py-3 px-4 border border-gray-200 border-b-transparent;
 }
 .rw-segment-main {
-  @apply bg-gray-100 p-4;
+  @apply bg-white p-4 border border-gray-200 border-t-transparent;
 }
 .rw-link {
   @apply text-blue-400 underline;
@@ -79,13 +79,13 @@
   @apply mt-2 list-disc list-inside;
 }
 .rw-button {
-  @apply flex justify-center py-1 px-4 border-0 rounded bg-gray-200 text-gray-500 text-xs font-semibold uppercase tracking-wide leading-loose no-underline cursor-pointer transition duration-100;
+  @apply flex justify-center items-center py-2.5 px-4 border-0 rounded-lg bg-gray-200 text-gray-500 text-sm font-semibold uppercase tracking-wide leading-loose no-underline cursor-pointer transition duration-300;
 }
 .rw-button:hover {
   @apply bg-gray-500 text-white;
 }
 .rw-button.rw-button-small {
-  @apply text-xs rounded-sm py-1 px-2;
+  @apply text-xs rounded-md  py-1 px-2;
 }
 .rw-button.rw-button-green {
   @apply bg-green-500 text-white;
@@ -104,6 +104,12 @@
 }
 .rw-button.rw-button-red:hover {
   @apply bg-red-700 text-white;
+}
+.rw-button.rw-button-indigo {
+  @apply bg-indigo-500 text-white;
+}
+.rw-button.rw-button-indigo:hover {
+  @apply bg-indigo-700 text-white;
 }
 .rw-button-icon {
   @apply text-xl leading-5 mr-1;
@@ -140,14 +146,13 @@
   @apply border-gray-400;
 }
 .rw-input-error {
-  @apply border-red-600 text-red-600;
+  @apply border-rose-600 text-rose-600;
 }
 .rw-input-error:focus {
-  @apply border-red-600 outline-none;
-  box-shadow: 0 0 5px #c53030;
+  @apply border-rose-600 outline-none;
 }
 .rw-field-error {
-  @apply block mt-1 font-semibold text-xs text-red-600 uppercase;
+  @apply block mt-1 font-semibold text-xs text-rose-600 uppercase;
 }
 .rw-table-wrapper-responsive {
   @apply overflow-x-scroll;
@@ -156,7 +161,7 @@
   min-width: 48rem;
 }
 .rw-table {
-  @apply w-full text-sm;
+  @apply w-full text-sm border border-gray-200;
 }
 .rw-table th,
 .rw-table td {
@@ -166,7 +171,7 @@
   @apply bg-white text-gray-900;
 }
 .rw-table thead tr {
-  @apply bg-gray-200 text-gray-600;
+  @apply bg-gray-100 text-gray-600;
 }
 .rw-table th {
   @apply font-semibold text-left;
