@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#redwood-app {
+  @apply bg-gray-50 w-full h-screen flex items-center justify-center select-none;
+}
